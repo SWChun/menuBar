@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  margin-top: 70px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Varela Round', sans-serif;
@@ -32,6 +33,9 @@ a {
 .item1 {
   font-size: 130%;
 }
+.item1 i {
+  color: #d49466;
+}
 .item2 {
   display: flex;
   justify-content: space-evenly;
@@ -39,10 +43,16 @@ a {
   text-align: center;
   font-size: 90%;
   list-style: none;
+  margin: 0;
 }
 .item li {
+
+}
+.item a {
+  display: inline-block;
   padding: 8px 12px;
 }
+
 .item2 li:hover {
   background-color: #d49466;
   border-radius: 4px;
@@ -52,19 +62,19 @@ a {
   text-align: center;
 }
 .content {
-  padding: 60px 40px;
+  padding: 0px 40px;
 }
 
 
 @media (max-width: 800px) {
   .container {
     flex-direction: column;
-    height: auto;
+    height: 240px;
   }
   .item2 {
     flex-direction: column;
   }
-  .content {
-    padding: 160px 40px;
+  body {
+    margin-top: 260px;
   }
 }
